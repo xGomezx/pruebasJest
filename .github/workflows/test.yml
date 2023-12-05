@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 20.10.0
+        
+    - name: Install Jest globally
+      run: npm install -g jest
       
     - name: Install Dependencies
       run: npm install
